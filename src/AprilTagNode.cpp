@@ -279,6 +279,8 @@ AprilTagNode::onParameter(const std::vector<rclcpp::Parameter>& parameters)
 
     mutex.unlock();
 
+    RCLCPP_DEBUG_STREAM(get_logger(), "parameters updated");
+
     result.successful = true;
 
     return result;
